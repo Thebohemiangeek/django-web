@@ -27,4 +27,5 @@ python manage.py runserver
 You are all set for local development
 
 # Frontend
-- the template is [here](homepage/template/homepage/index.html)
+- The template is [here](homepage/templates/homepage/)
+  - once you clone and run the server, you can start building using the template
