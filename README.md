@@ -25,3 +25,6 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 You are all set for local development
+
+# Frontend
+- the template is [here](homepage/template/homepage/index.html)
