@@ -1,7 +1,7 @@
 from django.urls import path, include
-from rest_framework import routers
 from . import views
 
 urlpatterns =[
-path('', views.HomeView.as_view(), name='index'),
-]
+path('', views.search_index, name='search_view'),
+path('test/', views.test_view, name='test_view'),
+
