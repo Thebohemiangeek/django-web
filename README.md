@@ -64,14 +64,14 @@ curl -X GET "localhost:9200/"
   "cluster_name" : "elasticsearch",
   "cluster_uuid" : "B-5B34LXQFqDeIYwSgD3ww",
   "version" : {
-    "number" : "7.0.0",
+    "number" : "7.6.2",
     "build_flavor" : "default",
     "build_type" : "deb",
     "build_hash" : "b7e28a7",
-    "build_date" : "2019-04-05T22:55:32.697037Z",
+    "build_date" : "2020-03-26T06:34:37.794943Z",
     "build_snapshot" : false,
-    "lucene_version" : "8.0.0",
-    "minimum_wire_compatibility_version" : "6.7.0",
+    "lucene_version" : "8.4.0",
+    "minimum_wire_compatibility_version" : "6.8.0",
     "minimum_index_compatibility_version" : "6.0.0-beta1"
   },
   "tagline" : "You Know, for Search"
