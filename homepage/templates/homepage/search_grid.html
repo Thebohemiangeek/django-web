@@ -1,0 +1,62 @@
+{% load static %}
+
+
+<!doctype html>
+<html>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Project Name</h5>
+                    <p class="card-text">Project Location</p>
+                    <p class="card-text">keywords</p>
+
+                    <a href="#" class="btn btn-primary">Look Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Project Name</h5>
+                    <p class="card-text">Project Location</p>
+                    <p class="card-text">keywords</p>
+
+                    <a href="#" class="btn btn-primary">Look Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Project Name</h5>
+                    <p class="card-text">Project Location</p>
+                    <p class="card-text">keywords</p>
+
+                    <a href="#" class="btn btn-primary">Look Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if results %}
+
+    {% for mytuple in results %}
+    <div class="images">
+        <img src="{{ mytuple.1 }}" hspace=5">{{ mytuple.0 }}
+        <img src="{% static "img/email_icon.png" %}" hspace="5">{{ mytuple.1 }}
+        <img src="{% static "img/gender_icon.png" %}" hspace="5">{{ mytuple.2 }}
+        <img src="{% static "img/address_icon.png" %}" hspace="5">{{ mytuple.3 }}
+    </div>
+    {% endfor %}
+    {%elif not results %}
+    <p>No results found.</p>
+    {% endif %}
+
+</div>
+
+</html>

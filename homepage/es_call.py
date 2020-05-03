@@ -1,5 +1,5 @@
-from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Search, Q
+##from elasticsearch import Elasticsearch
+##from elasticsearch_dsl import Search, Q
 
 
 def esearch(firstname="", gender=""):

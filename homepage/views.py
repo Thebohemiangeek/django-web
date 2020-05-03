@@ -3,7 +3,7 @@ from .es_call import esearch, devpost_esearch
 # Create your views here.
 
 
-#========== test views =================================================
+# ========== test views =================================================
 def es_example_view(request):
     results = []
     name_term = ""
@@ -16,10 +16,12 @@ def es_example_view(request):
     elif request.GET.get('gender'):
         gender_term = request.GET['gender']
     search_term = name_term or gender_term
-    results = esearch(firstname = name_term, gender=gender_term)
+    results = esearch(firstname=name_term, gender=gender_term)
     print(results)
-    context = {'results': results, 'count': len(results), 'search_term':  search_term}
+    context = {'results': results, 'count': len(
+        results), 'search_term':  search_term}
     return render(request,  'homepage/dev.html',  context)
+
 
 def es_test_view(request):
     results = []
@@ -29,20 +31,35 @@ def es_test_view(request):
 
     results = devpost_esearch(query_term)
     print(results)
-    context = {'results': results, 'count': len(results), 'search_term':  query_term}
+    context = {'results': results, 'count': len(
+        results), 'search_term':  query_term}
     return render(request,  'homepage/es_test.html',  context)
+
 
 def home_test_view(request):
     return render(request,  'homepage/index_test.html')
 
-#==================== production views===========================================
+
+country_list = {"Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla",
+                "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas",
+                "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia"}
+dict.fromkeys(country_list, 0)
+# ==================== production views===========================================
+my_list = dict.fromkeys(country_list, 0)
+
 
 def home_view(request):
     return render(request,  'homepage/index.html')
 
+
 def submit_view(request):
     return render(request,  'homepage/submit-project.html')
-  
+
+
 def test_view(request):
     return render(request,  'homepage/main.html')
 
+
+def search_view(request):
+    my_list = dict.fromkeys(country_list, 0)
+    return render(request,   'homepage/search.html', my_list)
