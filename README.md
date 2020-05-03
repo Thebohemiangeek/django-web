@@ -27,7 +27,7 @@ python manage.py runserver
 You are all set for local development
 
 # Frontend
-- The template (main.html) is [here](homepage/templates/homepage/)
+- The template (index.html) is [here](homepage/templates/homepage/)
   - once you clone and run the server, you can start building using the template
   
 # Elasticsearch Dependencies
