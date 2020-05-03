@@ -42,3 +42,7 @@ def home_view(request):
 
 def submit_view(request):
     return render(request,  'homepage/submit-project.html')
+  
+def test_view(request):
+    return render(request,  'homepage/main.html')
+

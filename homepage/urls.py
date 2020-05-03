@@ -8,3 +8,4 @@ path('submit/', views.submit_view, name='submit_view'),
 path('es_test/', views.es_test_view, name='es_test_view'),
 path('home_test/', views.home_test_view, name='home_test_view'),
 ]
+
