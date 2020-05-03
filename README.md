@@ -6,7 +6,7 @@
 
 ### @John-CitronRed 
   - Search results page
-### Your github handle (or whatever you're comfortable)
+### Your slack handle (or whatever you're comfortable)
   - Task
 
 # Django Setup
