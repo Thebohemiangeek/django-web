@@ -1,6 +1,7 @@
 # How to contribute to frontend
   - First check out the desings page [here](https://github.com/civictechhub/docs/blob/master/Project/design.md)
     - pick up a task and announce it below. Please try to include as much information as you can such as code snippets, screenshots and what not.
+    - When you pick up a task start with something small, you don't need to work on a whole page (if you can go for it).
 ## Use the following format to add your task
 ### Your github handle (or whatever you're comfortable)
   - Task
