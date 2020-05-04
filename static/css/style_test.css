@@ -20,9 +20,8 @@ body {
 
 .wrapper{
   width:100%;
-  max-width: 90rem;
-  margin-left: 5rem auto;
-  margin-right: 5rem auto;
+  padding-left: 5rem auto;
+  padding-right: 5rem auto;
   background-color: var(--background_color_two);
   min-height: 10rem;
   border-left: 1px solid var(--border_color);
@@ -185,17 +184,19 @@ body {
 
 
 
+.content{
+  margin: auto 10%;
+
+}
 
 .footer {
   margin-top: 3rem;
-  height: 23.75rem;
+  height: 18rem;
   width: 100%;
   background-color: #061F71;
+  color: white;
+
 }
 
-.footer_header {
-  margin-left: 8.8125rem;
-  font-size: 2.625rem;
-  font-weight: 700;
-  color: var(--background_color_one);
-}
+.footer ul li a{
+color: white;}

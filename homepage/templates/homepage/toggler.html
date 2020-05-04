@@ -4,8 +4,9 @@
 <!doctype html>
 <html>
 <div class="d-flex-column">
-    <div> Show results from: </div>
-    <p>Country/Region</p>
+    <h4> Show results from: </h4>
+    <h4>Country/Region</h4>
+
     {% for i in my_list.keys %}
 
     <div class="form-check">
@@ -14,22 +15,27 @@
     </div>
     {% endfor %}
 
-    <p>Project Type</p>
-    {% for i in my_list.keys %}
-
-    <div class="form-check">
+    <h4>Project Type</h4>
+         <div class="form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">{{i}}</label>
+        <label class="form-check-label" for="exampleCheck1">example</label>
     </div>
-    {% endfor %}
-    <p>Technologies</p>
-    {% for i in my_list.keys %}
-
-    <div class="form-check">
+      <div class="form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">{{i}}</label>
+        <label class="form-check-label" for="exampleCheck1">example</label>
     </div>
-    {% endfor %}
+
+    <h4>Technologies</h4>
+
+       <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">example</label>
+    </div>   <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">example</label>
+    </div>
+
+
 </div>
 
 </html>
