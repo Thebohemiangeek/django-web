@@ -32,14 +32,7 @@ pip install -r requirements.txt
 ```
 
 ### Start the webserver
- - **important - before you start the server open `civictechhub/settings.py` file and replace the last line `STATIC_ROOT = os.path.join(BASE_DIR, 'static/')` with 
- ```
- STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-``` 
-Save the file, and run
-
+ 
 ```
 python manage.py runserver
 ```
