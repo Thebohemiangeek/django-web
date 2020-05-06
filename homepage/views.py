@@ -39,12 +39,8 @@ def home_test_view(request):
     return render(request,  'homepage/index_test.html')
 
 
-country_list = {"Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla",
-                "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas",
-                "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia"}
-dict.fromkeys(country_list, 0)
+
 # ==================== production views===========================================
-my_list = dict.fromkeys(country_list, 0)
 
 
 def home_view(request):
@@ -59,5 +55,4 @@ def test_view(request):
 
 
 def search_view(request):
-    my_list = dict.fromkeys(country_list, 0)
-    return render(request,   'homepage/search.html', my_list)
+    return render(request,   'homepage/search.html')

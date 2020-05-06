@@ -1,6 +1,6 @@
 :root {
   --background_color_one: #FFF;
-  --background_color_two: #F2F4F6;
+  --background_color_two: #F2F2F2;
 
   --border_color: #D6E3F0;
 
@@ -8,25 +8,23 @@
   --link_color_one: #0B0B0B;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  max-width: 90rem;
-  background-color: var(--background_color_two);
-  font-family:'Open Sans', sans-serif;
+  background-color: var(--background_color_two) !important;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.wrapper{
-  width:auto;
+.wrapper {
+  width: auto;
   max-width: 90rem;
-  margin-left: 5rem auto;
-  margin-right: 5rem auto;
+
   background-color: var(--background_color_two);
   min-height: 10rem;
-  border-left: 1px solid var(--border_color);
-  border-right: 1px solid var(--border_color);
+
 }
 
 .navbar {
@@ -45,7 +43,7 @@ body {
   line-height: 5rem;
 }
 
-.page_menu a{
+.page_menu a {
   font-size: 1.5rem;
   font-weight: 400;
   margin-left: 2.5rem;
@@ -111,7 +109,7 @@ body {
   align-content: center;
 }
 
-.search_template{
+.search_template {
   width: 40rem;
 }
 
@@ -127,7 +125,7 @@ body {
   font-weight: 700;
 }
 
-.categories{
+.categories {
   margin-left: 8.8125rem;
   width: 68.75rem;
   height: 10.625rem;
@@ -146,14 +144,14 @@ body {
   font-weight: 400;
 }
 
-.category_bttn img{
+.category_bttn img {
   margin-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-.category_bttn span{
+.category_bttn span {
   line-height: 3rem;
 }
 
@@ -201,4 +199,36 @@ body {
   font-size: 2.625rem;
   font-weight: 700;
   color: var(--background_color_one);
+}
+
+.round_border {
+  border-radius: 20px !important;
+  border: none !important;
+}
+
+.container {
+  margin: 10px auto;
+}
+
+.card-featured {
+  background-color: var(--background_color_two);
+}
+
+.card-header {
+  border: none !important;
+  background-color: var(--background_color_two) !important;
+
+}
+
+.footer {
+  margin-top: 3rem;
+  height: 18rem;
+  width: 100%;
+  background-color: #061F71;
+  color: white;
+
+}
+
+.footer ul li a {
+  color: white;
 }
